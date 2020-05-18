@@ -13,6 +13,7 @@ module.exports = {
       {test:/\.less$/,use:['style-loader','css-loader','postcss-loader','less-loader']},
       {test:/\.scss$/,use:['style-loader','css-loader','postcss-loader','sass-loader']},
       {test:/\.jpg|png|gif|bmp|ttf|eot|svg|woff|woff2$/,use:['url-loader?limit=16940']},
+      {test:/\.js$/,use:['babel-loader'],exclude:/node_modules/},
     ]
   }
 }
