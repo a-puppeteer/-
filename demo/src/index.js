@@ -24,7 +24,15 @@ class father {
   }
  }
 // var jw = new father(5,6)
-var jwson = new son(8,9)
+// var jwson = new son(8,9)
 // jw.sum()
-jwson.sum()
+// jwson.sum()
 // console.log(jwson,11);
+
+//-------------------vue部分
+import Vue from 'vue'
+import App from './compoments/app.vue'
+const vm = new Vue({
+  el:'#app',
+  render: h => h(App)
+})
